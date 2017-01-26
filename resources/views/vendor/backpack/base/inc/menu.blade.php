@@ -26,16 +26,6 @@
             @endif
         @else
             <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/logout') }}"><i class="fa fa-btn fa-sign-out"></i> {{ trans('backpack::base.logout') }}</a></li>
-            <li class="dropdown">
-            {{-- Languages Setting --}}
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                <i class="fa fa-globe"></i> Translations<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li class=""><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/language') }}"><i class="fa fa-flag-checkered"></i> Languages</a></li>
-                <li class=""><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/language/texts') }}"><i class="fa fa-language"></i> Site texts</a></li>
-              </ul>
-            </li>
         @endif
 
        <!-- ========== End of top menu right items ========== -->
